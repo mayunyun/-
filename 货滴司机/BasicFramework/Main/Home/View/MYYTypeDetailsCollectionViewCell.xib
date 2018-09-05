@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MYYTypeDetailsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="90"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="90"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="撒大声地" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WCn-wx-3CN">
+                        <rect key="frame" x="103" y="13" width="191" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="3Yj-1C-hbL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奥奥是多少快递公司龙岗街道是快乐刚开始时代大厦的" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="61G-Ph-cw0">
+                        <rect key="frame" x="103" y="39" width="191" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="37" id="xQR-Rc-OTv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sy" translatesAutoresizingMaskIntoConstraints="NO" id="oly-tW-2Cx">
+                        <rect key="frame" x="10" y="14" width="80" height="62"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="ADc-zR-8C2"/>
+                            <constraint firstAttribute="height" constant="62" id="BeP-7A-6pS"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="61G-Ph-cw0" secondAttribute="trailing" constant="6" id="2Sd-8w-aia"/>
+                <constraint firstItem="61G-Ph-cw0" firstAttribute="leading" secondItem="oly-tW-2Cx" secondAttribute="trailing" constant="13" id="Je0-dp-8vL"/>
+                <constraint firstItem="61G-Ph-cw0" firstAttribute="top" secondItem="WCn-wx-3CN" secondAttribute="bottom" constant="6" id="ZnP-Q3-tz9"/>
+                <constraint firstItem="WCn-wx-3CN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="ahq-ta-ldY"/>
+                <constraint firstItem="oly-tW-2Cx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="hBd-5B-tpc"/>
+                <constraint firstItem="WCn-wx-3CN" firstAttribute="leading" secondItem="oly-tW-2Cx" secondAttribute="trailing" constant="13" id="orh-kc-6ES"/>
+                <constraint firstAttribute="trailing" secondItem="WCn-wx-3CN" secondAttribute="trailing" constant="6" id="pPk-FW-WZe"/>
+                <constraint firstItem="oly-tW-2Cx" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="yFA-mH-zpA"/>
+            </constraints>
+            <connections>
+                <outlet property="imgView" destination="oly-tW-2Cx" id="VLn-Mz-yNJ"/>
+                <outlet property="priceLabel" destination="61G-Ph-cw0" id="vXI-pC-FF4"/>
+                <outlet property="titleLabel" destination="WCn-wx-3CN" id="u8O-Rg-wcZ"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sy" width="154" height="94"/>
+    </resources>
+</document>

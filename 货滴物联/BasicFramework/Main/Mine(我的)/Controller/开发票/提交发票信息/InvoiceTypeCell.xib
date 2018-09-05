@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="InvoiceTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zqr-oi-vm4">
+                        <rect key="frame" x="16" y="14" width="142" height="48"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电子发票" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTV-Ca-Qfq">
+                                <rect key="frame" x="29" y="2" width="84" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hf8-ri-qvH"/>
+                                    <constraint firstAttribute="width" constant="84" id="tmT-a1-xCF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.80784313725490198" green="0.23921568627450979" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最快5分钟开具" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hp8-hG-JV5">
+                                <rect key="frame" x="16" y="24" width="111" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="1kd-l5-Upa"/>
+                                    <constraint firstAttribute="height" constant="21" id="Dx1-tU-azL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.80784313725490198" green="0.23921568627450979" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="1YO-O6-ZZm"/>
+                            <constraint firstItem="qTV-Ca-Qfq" firstAttribute="top" secondItem="Zqr-oi-vm4" secondAttribute="top" constant="2" id="8Wx-hU-Euq"/>
+                            <constraint firstItem="Hp8-hG-JV5" firstAttribute="top" secondItem="qTV-Ca-Qfq" secondAttribute="bottom" constant="1" id="GX8-aO-ngY"/>
+                            <constraint firstItem="Hp8-hG-JV5" firstAttribute="centerX" secondItem="qTV-Ca-Qfq" secondAttribute="centerX" id="Hqm-xs-aLe"/>
+                            <constraint firstAttribute="width" constant="142" id="V4Z-HH-ZWQ"/>
+                            <constraint firstItem="qTV-Ca-Qfq" firstAttribute="centerX" secondItem="Zqr-oi-vm4" secondAttribute="centerX" id="mjh-ee-swO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zqr-oi-vm4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="JH4-eg-i5w"/>
+                    <constraint firstItem="Zqr-oi-vm4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="vnc-ZN-i50"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgview" destination="Zqr-oi-vm4" id="aHP-MM-RIe"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

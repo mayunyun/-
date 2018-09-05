@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FindPageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="83.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="发现_边框" translatesAutoresizingMaskIntoConstraints="NO" id="bKw-VN-Izs">
+                        <rect key="frame" x="15" y="12" width="290" height="62"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhH-tF-08N">
+                        <rect key="frame" x="114" y="23" width="118" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="CV6-rN-0xy"/>
+                            <constraint firstAttribute="width" constant="118" id="TNC-g1-nzI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHV-7h-kUk">
+                        <rect key="frame" x="30" y="23" width="80" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="9ud-sd-R4f"/>
+                            <constraint firstAttribute="width" constant="80" id="GJ3-af-AVb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="右箭头" translatesAutoresizingMaskIntoConstraints="NO" id="R0T-iN-7J3">
+                        <rect key="frame" x="272" y="34.5" width="10" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="RZA-d9-NnK"/>
+                            <constraint firstAttribute="height" constant="15" id="wb2-iO-TIR"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="bKw-VN-Izs" secondAttribute="bottom" constant="9.5" id="6of-cV-xWf"/>
+                    <constraint firstItem="bKw-VN-Izs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="87c-QD-c59"/>
+                    <constraint firstItem="NhH-tF-08N" firstAttribute="centerY" secondItem="cHV-7h-kUk" secondAttribute="centerY" id="F9G-et-6Ks"/>
+                    <constraint firstItem="NhH-tF-08N" firstAttribute="leading" secondItem="cHV-7h-kUk" secondAttribute="trailing" constant="4" id="Kk6-Zq-Jm2"/>
+                    <constraint firstAttribute="trailing" secondItem="bKw-VN-Izs" secondAttribute="trailing" constant="15" id="XqM-ST-6Ec"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="R0T-iN-7J3" secondAttribute="trailing" constant="22" id="hHn-IH-iT1"/>
+                    <constraint firstItem="R0T-iN-7J3" firstAttribute="centerY" secondItem="cHV-7h-kUk" secondAttribute="centerY" id="l4v-5X-8qd"/>
+                    <constraint firstItem="cHV-7h-kUk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="14" id="r6r-po-vyM"/>
+                    <constraint firstItem="cHV-7h-kUk" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="u7N-G2-XyK"/>
+                    <constraint firstItem="bKw-VN-Izs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="vsG-kY-0cB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgimgV" destination="bKw-VN-Izs" id="OBa-oQ-dQG"/>
+                <outlet property="leftName" destination="cHV-7h-kUk" id="I7l-uw-FYM"/>
+                <outlet property="rightName" destination="NhH-tF-08N" id="rl8-bW-XG8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="发现_边框" width="330" height="61"/>
+        <image name="右箭头" width="8" height="15"/>
+    </resources>
+</document>
